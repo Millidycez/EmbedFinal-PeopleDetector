@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+}
+
+/* html tags */
+body{
+  margin : 0 auto;
+  width: 70%;
+  /* dark mode */
+  background-color: #1f1f1f;
+  color: #d2d2d2;
+}
+
+button {
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  
+  padding: .5em 2em;
+  font-size: 16px;
+  border-radius: .5em;
+
+  /* Animation */
+  transition-duration: 0.4s;
+}
+
+
+/* classes */
+.center{
+  text-align: center;
+}
+.container{
+  margin: 0 auto;
+}
+.data{
+  color: #1f1f1f;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.data-sub{
+  min-width: 7em;
+  border-radius: .6em;
+}
+.number-plane{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+.text{
+  margin: 10px 0;
+}
+
+
+/* text classes */
+.desc{
+  font-size: 16px;
+}
+.unit{
+  font-size: 12px;
+}
+
+/* ids */
+#connect{
+  background-color: #036828; /* Green */
+}
+#connect:hover {
+  background-color: #85fec2; /* LGreen */
+  color: white;
+  cursor: pointer;
+}
+
+#data-sub-ULT{
+  background-color: rgb(138, 234, 138);
+}
+#data-sub-LDR{
+  background-color: aqua;
+}
+#data-sub-PIR{
+  background-color: rgb(229, 182, 64);
+}
+#number-unit-ULT{
+  margin-left: 0.2em;
+}

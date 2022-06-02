@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Room Monitoring</title>
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Javascript -->
+  <script src="https://cdn.netpie.io/microgear.js" defer></script>
+  <script src="const.js" defer> </script>
+  <script src="helper.js" defer> </script>
+  <script src="backend.js" defer> </script>
+  <!-- <script src="test.js" defer> </script> -->
+  
+</head>
+<body>
+
+  <div class="container center">
+
+    <h1> Latest non-faulty values: </h1>
+    
+    <div class="data">
+      <div class="data-row1 data-sub" id="data-sub-ULT">
+        <div class="desc" id="desc_ULT"> Ultrasonic distance </div>
+        
+        <div class="number-plane">
+          <div id="number_ULT"> -1 </div>
+          <div class="unit" id="number-unit-ULT"> cm </div>
+        </div>
+
+      </div>   
+      
+      <div class="data-row1 data-sub" id="data-sub-LDR">
+        <div class="desc" id="desc_LDR"> LDR value </div>
+
+        <div class="number-plane">
+          <div id="number_LDR"> -1 </div>
+          <div class="unit" id="number-unit-ULT"> /4096 </div>
+        </div>
+
+      </div>
+
+      <div class="data-row2 data-sub" id="data-sub-PIR">
+        <div class="desc" id="desc_PIR"> PIR Detection </div>
+        <div id="number_PIR"> -- </div>
+      </div>
+    </div>
+
+    <div class="text" id="latest-detection"> latest detection </div>
+    <!-- <div class="text" id="test"> test </div> -->
+    
+    <div class="buttons">
+      <button id="connect"> Connect </button>
+    </div>
+
+    <div class="text" id="connection-status"> ---- </div>
+    
+  </div>
+
+</body>
+</html>
